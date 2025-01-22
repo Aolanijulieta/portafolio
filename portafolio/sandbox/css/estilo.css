@@ -1,0 +1,16 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+#agrupar  {
+width: 650px; 
+margin: 10px auto;
+
+}
+/*Estilo para la cabecera de la página web */
+#cabecera
+{
+    background: cyan;
+    border: 1px solid #999;
+}

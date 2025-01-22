@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            const slides = document.querySelectorAll('.carousel-slide');
+            slides.forEach((slide, i) => {
+                slide.style.display = i === index ? 'block' : 'none';
+            });
+        }
+
+        function nextSlide() {
+            const slides = document.querySelectorAll('.carousel-slide');
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            const slides = document.querySelectorAll('.carousel-slide');
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            showSlide(currentSlide);
+            setInterval(nextSlide, 3000);
+        });
+    </script>
+</head>
+
+<body style="font-family: Arial, sans-serif;">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="position: relative;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="homepage.html">Aolani Julieta</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank"
+                            href="https://www.canva.com/design/DAGbiN2zWIc/aSh7YMDZg4JtWDlK5HcVng/edit?utm_content=DAGbiN2zWIc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Actividad
+                            1</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Actividad 2</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="../act2/act2a.html">Actividad 2a</a></li>
+                            <li><a class="dropdown-item" href="../act2/act2b.html">Actividad 2b</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../act3/indexa.html">Actividad 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../act5/act5.html">Actividad 5</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Actividad 6</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../examen/examen.html">Examen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Proyecto final</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="text-black text-center py-5"
+        style="background-image: url('img/header.jpg'); background-size: cover; background-position: center;">
+        <div class="container">
+            <h1>Mi portafolio de trabajos: Aolani</h1>
+            <p class="lead">Experiencias y actividades durante la EE: Proyecto Web</p>
+            <a href="https://lienzos.uv.mx/Uploads/resources/Produccionydisen%CC%83owebactualizado_467e.pdf"
+                class="btn btn-light btn-lg">Conocer más</a>
+        </div>
+    </header>
+
+
+    <main class="container my-5">
+        <div class="row">
+
+            <div class="col-md-3">
+                <h3>Saberes Teóricos</h3>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Tema 1: Introducción a las tecnologías web
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ol>
+                                    <li>Editores</li>
+                                    <li>HTML5</li>
+                                    <li>Etiquetas</li>
+                                    <li>CSS</li>
+                                    <li>Reglas</li>
+                                    <li>Diseño Adaptativo</li>
+                                    <li>Diseño UX</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Tema 2: Marcos de trabajo FrontEnd
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ol>
+                                    <li>Introducción</li>
+                                    <li>Plantilla de inicio</li>
+                                    <li>Sistema de mallas <ol>
+                                            <li>Clases responsivas</li>
+                                        </ol>
+                                    </li>
+                                    <li>Plantillas</li>
+                                    <li>Componentes</li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Tema 3: Desarrollo del Proyecto
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ol>
+                                    <li>Planificación</li>
+
+                                    <li>Perfil del cliente</li>
+                                    <ul>
+                                        <li>Perfil del usuario final</li>
+                                        <li>Definir tipo de sitio</li>
+                                        <li>Análisis de deseos vs. requerimientos</li>
+                                    </ul>
+                                    <li>Mock up prototipos</li>
+
+                                    <li>Desarrollo</li>
+
+                                    <li>Recursos del cliente</li>
+
+                                    <li>Fuentes de inspiración</li>
+
+                                    <li>Plantillas</li>
+
+                                    <li>Mock up con imágenes</li>
+
+                                    <li>Creación y edición</li>
+
+                                    <li>Editor de HTML</li>
+
+                                    <li>Editor CSS</li>
+
+                                    <li>Editor de imágenes (GIMP, inkscape)</li>
+
+                                    <li>Publicación y pruebas</li>
+
+                                    <li>Host, dominio</li>
+
+                                    <li>Publicación</li>
+
+                                    <li>Proyecto final en sitio web</li>
+
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+
+            <div class="col-md-9">
+                <div class="row text-center mb-4">
+                    <div class="col-md-4">
+                        <h2>Experiencia educativa</h2>
+                        <p>Proyecto Web (intersemestral)</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h2>Descripción del curso</h2>
+                        <p>Proyecto Web enseña a crear páginas web con HTML5
+                            y CSS3, escribir tu propio código y cambiar tu forma de ver (y de diseñar) la web,
+                            entendiendo cómo
+                            funciona por dentro.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h2>Docente</h2>
+                        <p>Manuel Ignacio Martínez Acuña</p>
+                    </div>
+                </div>
+                <h3>Mis expectativas</h3>
+                <p>Antes de llevar este curso, tenía mucho miedo de no poder entender correctamente los temas ya que el
+                    contenido de la materia es muy distinto al de todas las demás de la carrera. Por esto, quise aplazar un poco el
+                    periodo en el que cursaba esta EE para estar preparada y no reprobarla.</p>
+                
+                <div id="carouselExampleIndicators" class="carousel slide my-5" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/yo.jpg" class="d-block w-100" alt="Slide 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/lap.jpg" class="d-block w-100" alt="Slide 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/progr.jpg" class="d-block w-100" alt="Slide 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/work.jpg" class="d-block w-100" alt="Slide 3">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <h3>Impresiones del curso</h3>
+                <p>Sin duda es una materia muy distinta a las demás de mi carrera, sin embargo, me siento feliz de que
+                    pude comprender los temas de manera correcta y ahora conozco un nuevo campo laboral en el que podría
+                    desempeñarme. Además, me da gusto tener una nueva habilidad que me gustaría desarrollar, ya que
+                    quiero continuar aprendiendo programación.</p>
+                
+                <div class="row my-5 align-items-center">
+                    <div class="col-md-6">
+                        <img src="img/playa.jpg" alt="Why Choose Us" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-6">
+                        <h2>Un poco sobre mí</h2>
+                        <p>Mi nombre es Aolani, es hawaiano y significa nube. Soy de Huatusco, Veracruz y estoy por
+                            concluir la carrera de Administración de Negocios Internacionales. Mi mayor meta profesional
+                            es especializarme en Music and Entertainment Business y al mismo tiempo establecer mi propia
+                            cadena de
+                            restaurantes. También me gustaría ser rectora de la UV algún día. Me encanta mi carrera ya
+                            que tiene un sinfín de oportunidades y campos laborales en los cuales desempeñarme y es muy
+                            bien remunerada si trabajas de manera correcta. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025. Aolani López Dávila.</p>
+        <a href="https://facebook.com/aolani.davila" class="text-white">Contacto</a>
+    </footer>
+</body>
+
+</html>

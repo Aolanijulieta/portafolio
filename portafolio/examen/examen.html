@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f5f5dc;
+            /* Color crema */
+        }
+
+        .navbar {
+            background-color: #000000;
+            /* Color negro */
+        }
+
+        .navbar-brand img {
+            width: 80px;
+            /* Tamaño pequeño del logo */
+            height: auto;
+        }
+
+        .carousel-item img {
+            width: 100%;
+            height: 500px;
+            /* Ajustar altura del carrusel */
+            object-fit: cover;
+        }
+
+        .footer {
+            background-color: #000000;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .text-gold {
+            color: #FFD700;
+            /* Color dorado */
+        }
+
+        .container-info {
+            margin-top: 30px;
+        }
+
+        .carousel-container {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="position: relative;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../portf/homepage.html">Aolani Julieta</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.canva.com/design/DAGbiN2zWIc/aSh7YMDZg4JtWDlK5HcVng/edit?utm_content=DAGbiN2zWIc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Actividad 1</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Actividad 2</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="../act2/act2a.html">Actividad 2a</a></li>
+                            <li><a class="dropdown-item" href="../act2/act2b.html">Actividad 2b</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../act3/indexa.html">Actividad 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../act5/act5.html">Actividad 5</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Actividad 6</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../examen/examen.html">Examen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Proyecto final</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.jpg" alt="Logo">
+                <h1 class="h4 text-center flex-grow-1 m-0">Nido del Craving</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active text-gold" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-gold" href="#">Promociones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-gold" href="#">Instalaciones</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container carousel-container">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/burger.jpg" class="d-block w-100" alt="Imagen 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/pizza.jpg" class="d-block w-100" alt="Imagen 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/yogurt.jpg" class="d-block w-100" alt="Imagen 3">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container container-info">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center text-gold">Bienvenidos al Nido del Craving</h1>
+                <p class="text-center">¡El lugar perfecto para disfrutar de hamburguesas, pizzas y yogurt en Xalapa!
+
+                    En el nido del Craving sabemos lo que los estudiantes necesitan: comida deliciosa, rápida y
+                    accesible. Ya sea que estés buscando un almuerzo rápido entre clases o un lugar cómodo para
+                    relajarte con amigos, ¡tenemos lo que necesitas!</p>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <h3 class="text-center text-gold">Hamburguesas</h3>
+                <p class="text-center">Disfruta de las mejores hamburguesas de la región.</p>
+            </div>
+            <div class="col-md-4">
+                <h3 class="text-center text-gold">Pizzas</h3>
+                <p class="text-center">Cada pizza cuenta con un toque casero único.</p>
+            </div>
+            <div class="col-md-4">
+                <h3 class="text-center text-gold">Sodas</h3>
+                <p class="text-center">Disfruta de las Sodas más exóticas que tenemos para ti.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container container-info">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center text-gold">Nuestras Promociones</h1>
+                <p class="text-center">
+                <ol>
+                    <li>Combo Estudiante: Hamburguesa + Papas + Refresco por solo $79 MXN.</li>
+                    <li>Pizza 2x1: Todos los martes y jueves disfruta de nuestras pizzas al 2x1.</li>
+                    <li>Yogurt Especial: Lleva un yogurt con toppings gratis al comprar cualquier combo.</li>
+                </ol>
+                </p>
+                <h1 class="text-center text-gold">Conoce nuestras instalaciones</h1>
+                <p>Disfruta de un espacio diseñado pensando en ti. Nuestro restaurante cuenta con áreas de:</p>
+                <ul>
+                    <li>Comedor acogedor para relajarte y disfrutar de tus comidas.</li>
+                    <li>Zona de pedidos rápida para llevar tus alimentos sin esperar demasiado.</li>
+                    <li>Área de estudio con Wi-Fi gratuito, ideal para hacer tareas mientras comes algo delicioso.
+                    </li>
+                </ul>
+                <img src="img/lugar.png" alt="Logo" style="height: 200px;">
+                <h1 class="text-center text-gold">Ubicación</h1>
+                <p class="text-center">Nos encontramos en:
+                    Arco Sur Paseo 112 lote 2, Campo Nuevo, 91097 Xalapa-Enríquez, Ver., México
+                    Ven a conocernos, estamos ubicados a solo unos minutos de la universidad.</p>
+            </div>
+        </div>
+<footer class="footer">
+<p>&copy; 2025. Aolani López.</p>
+<p><a href="#" class="text-gold">Política de Privacidad</a> | <a href="#" class="text-gold">Contacto</a></p>
+</footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
